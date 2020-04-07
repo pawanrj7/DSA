@@ -7,7 +7,7 @@ using namespace std;
 int main() {
 
 
-	int sum, n;
+	int sum, n,add;
     cout<<"Enter size of array:\n";
 	cin >> n;
 
@@ -20,6 +20,7 @@ int main() {
     for (int i = 0; i < n; i++) {
 		sum+= a[i];
 	}
-    cout<<"Missing element is: "<<n*(n-1)/2;
+    add= a[n-1]*(a[n-1]+1)/2;
+    cout<<"Missing element is: "<<add-sum;
     return 0;
 }
