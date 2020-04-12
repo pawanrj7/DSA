@@ -14,8 +14,7 @@ void uni(int a[], int b[],int n, int m){
             j++;
             k++;
         }
-
-        if(a[i]<b[j]){
+        else if(a[i]<b[j]){
             c[k++]=a[i++];
 
         }
@@ -32,9 +31,9 @@ void uni(int a[], int b[],int n, int m){
         c[k++]=b[j];
     }
 
-    z= sizeof(c)/sizeof(c[0]);
+    
 
-     for(i=0;i<z;i++){
+     for(i=0;i<k;i++){
         cout<<c[i]<<" ";
     }
 }
