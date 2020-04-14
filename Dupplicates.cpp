@@ -12,12 +12,16 @@ int main()
         cin >> arr[i];
     }
 
+    //We are finding max no in array to create hash of that size
+
     for(int i=0;i<n;i++){
         if(high<arr[i])
         {
             high=arr[i];
         }
     }
+
+    // initialise the hash with zero and inc the value as we visit.
 
     int hash[high] = {0};
     for (int i = 0; i < n; i++)
