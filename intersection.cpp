@@ -49,7 +49,7 @@ int main()
     // merging of two array
     inter(a, b, n, m);
 
-    //this stops here
+    
 
     return 0;
 
