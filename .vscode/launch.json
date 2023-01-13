@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch NQueens",
+            "request": "launch",
+            "mainClass": "NQueens",
+            "projectName": "DSA_afc984c6"
+        },
+        {
             "name": "g++.exe - Build and debug active file",
             "type": "cppdbg",
             "request": "launch",
