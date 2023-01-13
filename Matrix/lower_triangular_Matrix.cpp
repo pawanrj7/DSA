@@ -72,7 +72,7 @@ int main()
     cout<<"Enter the size of array:";
     cin>>n;
     diagonalM dm(n);
-    cout<<"Enter  values for Diagonal matrix:";
+    cout<<"Enter  values for Lower triangular  matrix:";
     for(i=1;i<=n;i++){
         for(j=1;j<=n;j++){
             cin>>x;
