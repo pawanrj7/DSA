@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch HamiltonianApp",
+            "request": "launch",
+            "mainClass": "HamiltonianApp",
+            "projectName": "DSA_afc984c6"
+        },
+        {
+            "type": "java",
             "name": "Launch NQueens",
             "request": "launch",
             "mainClass": "NQueens",
