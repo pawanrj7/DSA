@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch GraphColouring",
+            "request": "launch",
+            "mainClass": "GraphColouring",
+            "projectName": "DSA_afc984c6"
+        },
+        {
+            "type": "java",
             "name": "Launch HamiltonianApp",
             "request": "launch",
             "mainClass": "HamiltonianApp",
