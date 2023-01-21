@@ -1,4 +1,3 @@
-
 public class KnightsTour {
     int[][] chessBoard;
     int boardSize;
@@ -8,10 +7,10 @@ public class KnightsTour {
     public KnightsTour(int boardSize) {
         this.boardSize = boardSize;
         this.chessBoard = new int[boardSize][boardSize];
-        initiliseChessBoard();
+        initializeChessBoard();
     }
 
-    void initiliseChessBoard() {
+    void initializeChessBoard() {
         for (int i = 0; i < boardSize; i++) {
             for (int j = 0; j < boardSize; j++) {
                 chessBoard[i][j] = Integer.MIN_VALUE;
@@ -21,6 +20,7 @@ public class KnightsTour {
     }
 
     public void solve() {
+        chessBoard[0][0] = 0;
         if (solveProblem(1, 0, 0)) {
             printSol();
         } else {
@@ -36,14 +36,14 @@ public class KnightsTour {
 
         for (int i = 0; i < xMoves.length; i++) {
             int xNext = x + xMoves[i];
-            int yNext = y + xMoves[i];
+            int yNext = y + yMoves[i];
             if (isValid(xNext, yNext)) {
-                this.chessBoard[xNext][yNext] = stepCount;
+                chessBoard[xNext][yNext] = stepCount;
 
                 if (solveProblem(stepCount + 1, xNext, yNext))
                     return true;
 
-                this.chessBoard[xNext][yNext] = Integer.MIN_VALUE;
+                chessBoard[xNext][yNext] = Integer.MIN_VALUE;
             }
 
         }
@@ -53,9 +53,9 @@ public class KnightsTour {
 
     private boolean isValid(int x, int y) {
 
-        if (x < 0 || x > boardSize)
+        if (x < 0 || x >= boardSize)
             return false;
-        if (y < 0 || y > boardSize)
+        if (y < 0 || y >= boardSize)
             return false;
 
         if (chessBoard[x][y] != Integer.MIN_VALUE)
