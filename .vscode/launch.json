@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch CommomPrefix",
+            "request": "launch",
+            "mainClass": "CommomPrefix",
+            "projectName": "DSA_afc984c6"
+        },
+        {
+            "type": "java",
             "name": "Launch App",
             "request": "launch",
             "mainClass": "App",
