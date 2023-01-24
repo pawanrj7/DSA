@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MazeApp",
+            "request": "launch",
+            "mainClass": "MazeApp",
+            "projectName": "DSA_afc984c6"
+        },
+        {
+            "type": "java",
             "name": "Launch CommomPrefix",
             "request": "launch",
             "mainClass": "CommomPrefix",
